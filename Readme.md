@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Тамара Казанская](https://up.htmlacademy.ru/htmlcss/37/user/2384389).
-* Наставник: `Неизвестно`.
+- Студент: [Тамара Казанская](https://up.htmlacademy.ru/htmlcss/37/user/2384389).
+- Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761)
 
 ---
 
