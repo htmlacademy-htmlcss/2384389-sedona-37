@@ -18,25 +18,23 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
         <ul class="navigation-list navigation-user">
-          <li clas="navigation-item">
+          <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li clas="navigation-item">
+          <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <li clas="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
-          </li>
         </ul>
+        <a class="navigation-link" href="#">Хочу сюда!</a>
       </nav>
     </header>
 
@@ -132,7 +130,7 @@
         <p class="subscription-intro">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <form class="subscription-form" action="#" metod="post">
+        <form class="subscription-form" action="#" method="post">
           <label for="newsletter-email" class="visually-hidden">E-mail</label>
           <input
             class="field"
@@ -140,6 +138,7 @@
             name="newsletter"
             placeholder="Ваш e-mail"
             id="newsletter-email"
+            required
           />
           <button class="button newsletter-button" type="submit">
             Подписаться
@@ -148,6 +147,28 @@
       </section>
     </main>
 
-    <footer class="main-footer"></footer>
+    <footer class="main-footer">
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="https://vk.com/htmlacademy"
+            ><span class="visually-hidden">Vkontakte</span></a
+          >
+        </li>
+        <li class="social-item">
+          <a href="https://t.me/htmlacademy"
+            ><span class="visually-hidden">Telegram</span></a
+          >
+        </li>
+        <li class="social-item">
+          <a href="https://www.youtube.com/user/htmlacademyru"
+            ><span class="visually-hidden">Youtube</span></a
+          >
+        </li>
+      </ul>
+      <a class="tel-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="footer-logo-html" href="https://htmlacademy.ru/"
+        ><img src="#" alt="логотип HTML академии"
+      /></a>
+    </footer>
   </body>
 </html>
