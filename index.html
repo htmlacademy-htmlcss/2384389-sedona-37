@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="main-header">
-      <a class="logo" href="#"><img src="#" alt="Логотип Sedona" /></a>
-      <nav class="header-navigation">
+      <a class="logo" href="index.html"><img src="images/logo_sedona.svg" alt="Лого Sedona" width="140" height="70"></a>
+        <nav class="header-navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link--current" href="#"
-              >Главная</a
-            >
+            <a class="navigation-link navigation-link--current">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -23,25 +22,23 @@
         </ul>
 
         <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
+          <li class="navigation-item-user">
+            <a class="navigation-link-search" href="#">
+              <span class="visually-hidden">Поиск</span></a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Избранное</span>
-            </a>
+          <li class="navigation-item-user">
+            <a class="navigation-link-user" href="#">
+              <span class="visually-hidden">Избранное</span></a>
           </li>
         </ul>
-        <a class="navigation-link" href="#">Хочу сюда!</a>
+        <a class="button button-broun" href="#">Хочу сюда!</a>
       </nav>
     </header>
 
     <main>
       <section class="hero">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <img class="hero-welcom" src="#" alt="Вид на горы Седоны" />
+        <img class="hero-welcom" src="images/welcome_sedona.svg" alt="Вид на горы Седоны" width="458" height="352">
       </section>
 
       <section class="about">
@@ -57,8 +54,8 @@
             <p class="about-description">
               Седона - не аттракцион для туристов, там течет своя жизнь
             </p>
-            <img class="about-view" src="#" alt="улица Седоны" />
-          </li>
+            <img class="about-view" src="images/street.jpg" alt="улица Седоны" width="800" height="385">
+            </li>
           <li class="about-item">
             <h3 class="about-item-title">Небольшая площадь</h3>
             <p class="about-description">
@@ -82,7 +79,7 @@
             <p class="about-description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
-            <img class="about-view" src="#" alt="Вид на мост Дьявола" />
+            <img class="about-view" src="images/bridge_diablo.jpg" alt="Вид на мост Дьявола" width="800" height="385">
           </li>
         </ul>
       </section>
@@ -122,7 +119,8 @@
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
-        <a class="booking-link" href="#">Поиск гостиницы в Седоне</a>
+        <a class="booking-link button button-broun" href="#"
+          >Поиск гостиницы в Седоне</a>
       </section>
 
       <section class="subscription">
@@ -132,15 +130,8 @@
         </p>
         <form class="subscription-form" action="#" method="post">
           <label for="newsletter-email" class="visually-hidden">E-mail</label>
-          <input
-            class="field"
-            type="email"
-            name="newsletter"
-            placeholder="Ваш e-mail"
-            id="newsletter-email"
-            required
-          />
-          <button class="button newsletter-button" type="submit">
+          <input class="field" type="email" name="newsletter" placeholder="Ваш e-mail" id="newsletter-email" required>
+          <button class="button newsletter-button button-blue" type="submit">
             Подписаться
           </button>
         </form>
@@ -151,24 +142,21 @@
       <ul class="social-list">
         <li class="social-item">
           <a href="https://vk.com/htmlacademy"
-            ><span class="visually-hidden">Vkontakte</span></a
-          >
+            ><span class="visually-hidden">Vkontakte</span></a>
         </li>
         <li class="social-item">
           <a href="https://t.me/htmlacademy"
-            ><span class="visually-hidden">Telegram</span></a
-          >
+            ><span class="visually-hidden">Telegram</span></a>
         </li>
         <li class="social-item">
           <a href="https://www.youtube.com/user/htmlacademyru"
-            ><span class="visually-hidden">Youtube</span></a
-          >
+            ><span class="visually-hidden">Youtube</span></a>
         </li>
       </ul>
       <a class="tel-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="footer-logo-html" href="https://htmlacademy.ru/"
-        ><img src="#" alt="логотип HTML академии"
-      /></a>
+      <a class="footer-logo-html" href="https://htmlacademy.ru/">
+        <img src="images/logo_html_academy.svg" alt="логотип HTML академии" width="115" height="33">
+      </a>
     </footer>
   </body>
 </html>
