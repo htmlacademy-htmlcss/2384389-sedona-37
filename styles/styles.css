@@ -1,3 +1,243 @@
-body {
-  background-color: tomato;
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
 }
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", "Arial", "sans-serif";
+  font-size: 18px;
+  line-height: 21px;
+  color:#333333 ;
+  background-color: #f2f2f2 ;
+}
+
+main {
+  color:#000000 ;
+  background-color: #f2f2f2 ;
+  text-align: center;
+  width: 1200px;
+  margin: auto;
+}
+
+/*не пойму, почему при подключении этого стиля вместе с текстом "поис" и "избранное" пропадают иконки,
+которые вставлены в background ниже для самих ссылок? а так же все фоновые картинки, у которых есть текст
+с классом visually-hidden
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  }*/
+
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #756157;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button-broun {
+  background-color: #756157;
+}
+
+
+.main-header {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+}
+
+.navigation-item, .navigation-item-user {
+  list-style-type: none;
+}
+
+.link-search {
+  background-image: url("../image/decor_images/icon_search.svg");
+  background-repeat: no-repeat;
+}
+
+.link-user {
+  background-image: url("../image/decor_images/icon_heard.svg");
+  background-repeat: no-repeat;
+
+}
+
+.quantity {
+  color:#ffffff;
+  background-color: #7DB54F;
+  text-align: center;
+}
+
+.hero {
+  background-image: url('../image/decor_images/white_hero.svg'), url("../image/decor_images/index_background.jpg");
+  background-repeat: no-repeat;
+}
+
+.about-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.about-intro {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.about-item {
+  list-style-type: none;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.about-city, .about-bridge {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.about-item-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-description-white {
+  color: #ffffff;
+}
+
+.about-description {
+  color:#333333;
+}
+
+.about-road {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.service-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.services-item-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.subscription-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.item-food {
+  background-color: #ffffff;
+  background-image: url("../image/decor_images/food_icon.svg");
+  background-repeat: no-repeat;
+  list-style-type: none;
+}
+
+.services-description {
+  color: #333333;
+}
+
+.item-souvenirs {
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url("../image/decor_images/souvenirs_icon.svg");
+  background-repeat: no-repeat;
+  list-style-type: none;
+}
+
+.item-house {
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url("../image/decor_images/house_icon.svg");
+  background-repeat: no-repeat;
+  list-style-type: none;
+}
+
+.booking-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.booking-intro {
+  color: #333333;
+}
+
+.subscription {
+  color: #ffffff;
+  background-image: url("../image/decor_images/background_subscription.jpg");
+  background-repeat: no-repeat;
+}
+
+.newsletter-button {
+  font-family: "PT Sans", "Arial", "sans-serif";
+  background-color: #82B3D3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
