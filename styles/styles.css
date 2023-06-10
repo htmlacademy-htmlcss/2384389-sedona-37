@@ -98,6 +98,8 @@ main {
 .hero {
   background-image: url('../image/decor_images/white_hero.svg'), url("../image/decor_images/index_background.jpg");
   background-repeat: no-repeat;
+  background-position: center bottom, center;
+  background-size: 100% auto;
 }
 
 .about-title {
