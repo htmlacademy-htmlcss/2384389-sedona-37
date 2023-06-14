@@ -408,11 +408,14 @@ main {
 }
 
 .catalog-card-link-title {
+  text-decoration: none;
+}
+
+.catalog-card-title {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: #000000;
-  text-decoration: none;
 }
 
 .catalog-hotel-stars {
