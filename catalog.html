@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="page-conteiner">
     <header class="main-header">
      <a class="logo" href="index.html"><img src="image/logo_sedona.svg" alt="Лого Sedona" width="140" height="70"></a>
      <nav class="header-navigation">
-        <ul class="navigation-list">
+        <ul class="navigation-list navigation-site">
           <li class="navigation-item item-marker">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
@@ -37,8 +38,7 @@
     </header>
 
     <main class="inner">
-      <div class="filter-conteiner">
-      <section class="filtr">
+      <section class="filter">
         <h1 class="filtr-title">Гостиницы Седоны</h1>
 
         <ul class="breadcrumbs-list">
@@ -76,8 +76,8 @@
             </ul>
           </fieldset>
 
-          <fieldset class="filtr-catalog-group">
-            <legend class="filtr-catalog-group-title">Тип жилья:</legend>
+          <fieldset class="filtr-catalog-group filtr-catalog-group-house">
+            <legend class="filtr-catalog-group-title">Тип Жилья:</legend>
             <ul class="filtr-catalog-list">
               <li class="filtr-catalog-item item-marker">
                 <label class="control">
@@ -100,25 +100,33 @@
             </ul>
           </fieldset>
 
-          <fieldset class="filtr-catalog-group">
+          <fieldset class="filtr-catalog-group filtr-catalog-group-price ">
             <legend class="filtr-catalog-group-title">Стоимость, ₽:</legend>
-            <label class="filtr-price">от
-            <input class="catalog-price-input" type="text" name="price-min" value="0" placeholder="минимальное значение" required>
-            </label>
-            <label class="filtr-price">до
-            <input class="catalog-price-input" type="text" name="price-max" value="9000" placeholder="максимальное значение" required>
-           </label>
+            <div class="conteiner-price">
+              <label class="filtr-price">от
+                <input class="catalog-price-input" type="text" name="price-min" value="0" placeholder="минимальное значение" required>
+              </label>
+              <label class="filtr-price">до
+                <input class="catalog-price-input" type="text" name="price-max" value="9000" placeholder="максимальное значение" required>
+              </label>
+            </div>
           </fieldset>
 
+        <div class="conteiner-price-button">
           <button class="button button-blue button-catalog-filtr" type="submit">Применить</button>
           <button class="button button-reset button-catalog-filtr" type="reset">Сбросить</button>
+        </div>
         </form>
-      </div>
+
       </section>
 
       <section class="catalog-hotel">
         <h2 class="visually-hidden">Каталог гостиниц</h2>
 
+        <div class="conteiner-hotel-select">
+        <p class="catalog-card-search main-title">
+          Найдено гостиниц:<span class="search-result"> 38</span>
+        </p>
         <select class="catalog-select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -126,19 +134,18 @@
 
         <ul class="catalog-view-list">
           <li class="catalog-view-item item-marker">
-            <a class="view-card-link" href="#"><span class="visually-hidden">показать карточки</span></a>
+            <a class="view-card-link view-link" href="#"><span class="visually-hidden">показать карточки</span></a>
           </li>
           <li class="catalog-view-item item-marker">
-            <a class="view-big-card-link" href="#"><span class="visually-hidden">показать большие карточки</span></a>
+            <a class="view-big-card-link view-link" href="#"><span class="visually-hidden">показать большие карточки</span></a>
           </li>
           <li class="catalog-view-item item-marker">
-            <a class="view-list-link" href="#"><span class="visually-hidden">показать списком</span></a>
+            <a class="view-list-link view-link" href="#"><span class="visually-hidden">показать списком</span></a>
           </li>
         </ul>
 
-        <p class="catalog-card-search main-title">
-          Найдено гостиниц:<span class="search-result"> 38</span>
-        </p>
+
+      </div>
 
         <ul class="catalog-card-list">
           <li class="catalog-card-item item-marker">
@@ -209,18 +216,21 @@
           <li class="pagination-item item-marker">
             <a class="pagination-link-button button-blue" href="#">4</a>
           </li>
+          <li class="pagination-item item-marker"><span class="pagination-link-button-interval">...</span></li>
           <li class="pagination-item item-marker">
             <a class="pagination-link-button button-blue" href="#">10</a>
           </li>
         </ul>
       </section>
 
-      <div class="subscription-conteiner-catalog">
-      <section class="subscription">
+
+      <section class="subscription subscription-catalog">
+        <div class="conteiner-subscription-title">
         <h2 class="subscription-title main-title">Подпишитесь на рассылку</h2>
         <p class="subscription-intro main-intro">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
+      </div>
         <form class="subscription-form" action="#" method="post">
           <label for="newsletter-email" class="visually-hidden">E-mail</label>
           <input class="field" type="email" name="newsletter" placeholder="Ваш e-mail" id="newsletter-email" required>
@@ -229,7 +239,7 @@
           </button>
         </form>
       </section>
-    </div>
+
     </main>
 
     <footer class="main-footer">
@@ -250,5 +260,6 @@
         <img src="image/logo_html_academy.svg" alt="логотип HTML академии" width="115" height="33">
       </a>
     </footer>
+  </div>
   </body>
 </html>
