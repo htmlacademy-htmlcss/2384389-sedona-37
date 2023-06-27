@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="page-conteiner">
     <header class="main-header">
      <a class="logo" href="index.html"><img src="image/logo_sedona.svg" alt="Лого Sedona" width="140" height="70"></a>
      <nav class="header-navigation">
-        <ul class="navigation-list">
+        <ul class="navigation-list navigation-site">
           <li class="navigation-item item-marker">
             <a class="navigation-link navigation-link--current">Главная</a>
           </li>
@@ -20,6 +21,7 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
+
 
         <ul class="navigation-list navigation-user">
           <li class="navigation-item-user item-marker">
@@ -33,85 +35,98 @@
           </li>
         </ul>
         <a class="button button-brown header-button" href="#">Хочу сюда!</a>
+
       </nav>
     </header>
 
     <main>
-      <div class="hero-conteiner">
       <section class="hero">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <img class="hero-welcom" src="image/welcome_sedona.svg" alt="Вид на горы Седоны" width="458" height="352">
       </section>
-    </div>
 
       <section class="about">
+      <div class="conteiner-about-title">
         <h2 class="about-title main-title">
           Седона - небольшой городок в Аризоне, заслуживающий большего!
         </h2>
         <p class="about-intro main-intro">
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </p>
+      </div>
         <ul class="about-list">
           <li class="about-item about-white item-marker">
-            <h3 class="about-item-title subtitle about-white">Настоящий городок</h3>
-            <p class="about-description-white">
-              Седона - не аттракцион для туристов, там течет своя жизнь
-            </p>
+            <div class="conteiner-about-subtitle">
+              <h3 class="about-item-title subtitle-about about-white">Настоящий городок</h3>
+              <p class="about-description">
+                Седона - не аттракцион для туристов, там течет своя жизнь
+              </p>
+            </div>
             <img class="about-view" src="image/street.jpg" alt="улица Седоны" width="800" height="385">
             </li>
-          <li class="about-item item-marker">
-            <h3 class="about-item-title subtitle">Небольшая площадь</h3>
+          <li class="about-item  about-black item-marker">
+            <h3 class="about-item-title subtitle-about">Небольшая площадь</h3>
             <p class="about-description">
               Все достопримечательности находятся очень близко
             </p>
           </li>
-          <li class="about-item about-road item-marker">
-            <h3 class="about-item-title subtitle">Красивая дорога</h3>
+          <li class="about-item about-black-road item-marker">
+            <h3 class="about-item-title subtitle-about">Красивая<br>дорога</h3>
             <p class="about-description">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
-          <li class="about-item item-marker">
-            <h3 class="about-item-title subtitle">Мало туристов</h3>
+          <li class="about-item about-black item-marker">
+            <h3 class="about-item-title subtitle-about">Мало<br>туристов</h3>
             <p class="about-description">
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
           <li class="about-item about-white item-marker">
-            <h3 class="about-item-title subtitle about-white">Там есть мост Дьявола</h3>
-            <p class="about-description-white">
-              Да, по нему можно пройти! Если вы осмелитесь, разумеется
-            </p>
             <img class="about-view" src="image/bridge_diablo.jpg" alt="Вид на мост Дьявола" width="800" height="385">
+            <div class="conteiner-about-subtitle">
+              <h3 class="about-item-title subtitle-about about-white">Там есть мост Дьявола</h3>
+              <p class="about-description">
+                Да, по нему можно пройти! Если вы осмелитесь, разумеется
+              </p>
+            </div>
           </li>
         </ul>
-      </section>
+    </section>
 
       <section class="services">
+        <div class="conteiner-services-title">
         <h2 class="service-title main-title">
           Приезжайте в Седону отдохнуть в комфорте и уюте!
         </h2>
         <p class="services-intro main-intro">
           Опытный персонал и качественное обслуживание
         </p>
+      </div>
         <ul class="services-list">
           <li class="services-item item-house item-marker">
-            <h3 class="services-item-title subtitle">Жилье</h3>
+            <div class="conteiner-item-services">
+            <h3 class="services-item-title subtitle-services">Жилье</h3>
             <p class="services-description">
-              Рекомендуем пожить в настоящем мотеле, все как в кино!
+              Рекомендуем пожить<br>в настоящем мотеле,<br>все как в кино!
             </p>
+            </div>
           </li>
           <li class="services-item item-food item-marker">
-            <h3 class="services-item-title subtitle">Еда</h3>
+            <div class="conteiner-item-services">
+            <h3 class="services-item-title subtitle-services">Еда</h3>
             <p class="services-description">
-              Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+              Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!
             </p>
+          </div>
           </li>
           <li class="services-item item-souvenirs item-marker">
-            <h3 class="services-item-title subtitle">Сувениры</h3>
+            <div class="conteiner-item-services">
+            <h3 class="services-item-title subtitle-services">Сувениры</h3>
             <p class="services-description">
-              Не только китайского, но и настоящего местного производства!
+              Не только китайского,<br>но и настоящего местного производства!
             </p>
+          </div>
           </li>
         </ul>
       </section>
@@ -126,12 +141,14 @@
           >Поиск гостиницы в Седоне</a>
       </section>
 
-      <div class="subscription-conteiner">
+
       <section class="subscription">
-        <h2 class="subscription-content main-title">Подпишитесь на рассылку</h2>
+        <div class="conteiner-subscription-title">
+        <h2 class="subscription-content subscription-title main-title">Подпишитесь на рассылку</h2>
         <p class="subscription-content main-intro">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
+      </div>
         <form class="subscription-form" action="#" method="post">
           <label for="newsletter-email" class="visually-hidden">E-mail</label>
           <input class="field" type="email" name="newsletter" placeholder="Ваш e-mail" id="newsletter-email" required>
@@ -140,7 +157,6 @@
           </button>
         </form>
       </section>
-    </div>
     </main>
 
     <footer class="main-footer">
@@ -161,5 +177,6 @@
         <img src="image/logo_html_academy.svg" alt="логотип HTML академии" width="115" height="33">
       </a>
     </footer>
+  </div>
   </body>
 </html>
