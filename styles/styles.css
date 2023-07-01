@@ -65,11 +65,11 @@ body {
 
 .header-navigation {
   display: flex;
-  width: 992px;
+  width: 1060px;
   flex-direction: row;
   /**justify-content: space-between;
   align-items: center;**/
-  margin-left: 170px;
+  padding-left: 170px;
 
 }
 
@@ -461,7 +461,12 @@ main {
 
 .subscription-title {
   padding-top: 96px;
+  margin: 0;
   margin-bottom: 20px;
+}
+
+.subscription-intro {
+  margin: 0;
 }
 
 .subscription-form {
@@ -492,36 +497,38 @@ main {
 }
 
 .social-item {
-
   height: 40px;
   text-align: center;
 }
 
 .social-vk {
-  background-image: url("../image/decor_images/icon_vk.svg");
+ /* background-image: url("../image/decor_images/icon_vk.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;*/
   width: 47px;
   height: 40px;
   display: inline-block;
+  padding-top: 13px;
 }
 
 .social-telegram {
-  background-image: url("../image/decor_images/icon_telegram.svg");
+  /*background-image: url("../image/decor_images/icon_telegram.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;*/
   width: 47px;
   height: 40px;
   display: inline-block;
+  padding-top: 13px;
 }
 
 .social-youtube {
-  background-image: url("../image/decor_images/icon_youtube.svg");
+  /*background-image: url("../image/decor_images/icon_youtube.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;*/
   width: 47px;
   height: 40px;
   display: inline-block;
+  padding-top: 13px;
 }
 
 .tel-link {
@@ -560,12 +567,15 @@ main {
 }
 
 .card-button {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   width: 140px;
-  height: 36px;
   display: inline-block;
-  line-height: 36px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: auto 0;
+  word-wrap: break-word;
 }
 
 .button-selection-green {
@@ -576,24 +586,26 @@ main {
 
 .catalog-hotel-rating {
   font-size: 16px;
+  display: inline-block;
   line-height: 20px;
   color: #333333;
   text-align: center;
   text-transform: uppercase;
-  line-height: 36px;
-  height: 37px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0 auto;
   width: 140px;
   background-color: #F2F2F2;
   border-radius: 4px;
   border: none;
+  margin-top: 17px;
 }
 
 .pagination-list {
   display: grid;
   margin: 0;
   width: 400px;
-  margin-left: 70px;
-  grid-template-columns: 60px 60px 60px 60px 60px 60px;
+  grid-template-columns: repeat(6, 60px);
   gap: 8px;
   padding: 0;
 }
@@ -640,7 +652,7 @@ main {
   background-position: center;
   background-size: 100%;
   min-height: 412px;
-  margin-bottom: 50px;
+
 }
 
 .filtr-title {
@@ -774,6 +786,7 @@ main {
   height: 48px;
   width: 160px;
   padding: 0;
+  margin: 0;
 }
 
 .catalog-view-item {
@@ -822,14 +835,44 @@ main {
   background-position: center;
 }
 
+.catalog-hotel {
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  width: 1200px;
+
+}
+
 .catalog-card-list {
   display: grid;
-  grid-template-columns: 340px 340px 340px;
-  grid-template-rows: 438px 438px 438px;
+  grid-template-columns: 341px 340px 341px;
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
+  gap: 20px;
+}
+
+.catalog-card-item {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  column-gap: 20px;
+  padding: 20px;
+  border: 1px solid #E6E6E6 ;
+  border-radius: 4px;
+}
+
+.card-link-img {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  height: 212px;
+  width: 300px;
 }
 
 .catalog-card-link-title {
   text-decoration: none;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
 }
 
 .catalog-card-title {
@@ -837,14 +880,38 @@ main {
   line-height: 28px;
   font-weight: 700;
   color: #000000;
+  margin: 0;
+  padding-top: 16px;
+  text-align: start;
+}
+
+.type {
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 10px;
+  text-align: start;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.price {
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  text-align: end;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .catalog-hotel-stars {
   background-image: url("../image/decor_images/star.svg");
-  height: 17px;
-  width: 90px;
+  height: 36px;
+  width: 17px;
   display: block;
   background-repeat: no-repeat;
+
+  margin: 0;
+  margin-top: 16px;
 }
 
 .subscription-catalog {
