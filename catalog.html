@@ -46,6 +46,7 @@
             <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
               <span class="visually-hidden">Главная</span></a>
             </li>
+            <li class="breadcrumbs-item item-marker forward"><span class="visually-hidden">Переход на страницу</span></li>
           <li class="breadcrumbs-item item-marker">
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
@@ -127,10 +128,12 @@
         <p class="catalog-card-search main-title">
           Найдено гостиниц:<span class="search-result"> 38</span>
         </p>
-        <select class="catalog-select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешевые</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
+        <div class="select-conteiner">
+         <select class="catalog-select-control" aria-label="Сортировка">
+           <option value="cheap">Сначала дешевые</option>
+           <option value="expensive">Сначала дорогие</option>
+         </select>
+        </div>
 
         <ul class="catalog-view-list">
           <li class="catalog-view-item item-marker">
@@ -143,10 +146,9 @@
             <a class="view-list-link view-link" href="#"><span class="visually-hidden">показать списком</span></a>
           </li>
         </ul>
+     </div>
 
-
-      </div>
-
+      <div class="conteiner-card-list">
         <ul class="catalog-card-list">
           <li class="catalog-card-item item-marker">
             <a class="catalog-card-link card-link-img" href="#">
@@ -157,7 +159,9 @@
             <p class="price">От 4000 ₽</p>
             <a class="catalog-card-link button button-brown card-button" href="#">Подробнее</a>
             <button class="button button-blue card-button" type="button">В избранное</button>
+
             <p class="catalog-hotel-stars"><span class="visually-hidden">4 звезды</span></p>
+
             <p class="catalog-hotel-rating">Рейтинг: 8,5</p>
           </li>
 
@@ -171,7 +175,9 @@
             <p class="price">От 5000 ₽</p>
             <a class="catalog-card-link button button-brown card-button" href="#">Подробнее</a>
             <button class="button button-selection-green card-button" type="button">В избранном</button>
+
             <p class="catalog-hotel-stars"><span class="visually-hidden">4 звезды</span></p>
+
             <p class="catalog-hotel-rating">Рейтинг: 9,2</p>
           </li>
 
@@ -185,7 +191,9 @@
             <p class="price">От 2500 ₽</p>
             <a class="catalog-card-link button button-brown card-button" href="#">Подробнее</a>
             <button class="button button-blue card-button" type="button">В избранное</button>
+
             <p class="catalog-hotel-stars"><span class="visually-hidden">3 звезды</span></p>
+
             <p class="catalog-hotel-rating">Рейтинг: 6,9</p>
           </li>
 
@@ -198,10 +206,13 @@
             <p class="price">От 1500 ₽</p>
             <a class="catalog-card-link button button-brown card-button" href="#">Подробнее</a>
             <button class="button button-blue card-button" type="button">В избранное</button>
+
             <p class="catalog-hotel-stars"><span class="visually-hidden">2 звезды</span></p>
+
             <p class="catalog-hotel-rating">Рейтинг: 5,0</p>
           </li>
         </ul>
+      </div>
 
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current item-marker">
