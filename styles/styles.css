@@ -1676,9 +1676,9 @@ input[type=number] {
   background-color: #CCCCCC;
 }
 
-.modal-conteiner-close {
+/**.modal-conteiner-close {
   display: none;
-}
+}**/
 
 
 
