@@ -34,8 +34,7 @@
               <span class="quantity">12</span>
           </li>
         </ul>
-        <a class="button button-brown header-button" href="#">Хочу сюда!</a>
-
+        <a class="button button-brown header-button button-disabled" href="#">Хочу сюда!</a>
       </nav>
     </header>
 
@@ -138,7 +137,7 @@
           Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие
           предложения&nbsp;гостиниц в Седоне
         </p>
-        <a class="booking-link-button button button-brown" href="#"
+        <a class="booking-link-button button button-brown button-disabled" href="#"
           >Поиск гостиницы в Седоне</a>
       </section>
 
@@ -153,7 +152,7 @@
         <form class="subscription-form" action="#" method="post">
           <label for="newsletter-email" class="visually-hidden">E-mail</label>
           <input class="field" type="email" name="newsletter" placeholder="Ваш e-mail" id="newsletter-email" required>
-          <button class="button newsletter-button button-blue" type="submit">
+          <button class="button newsletter-button button-blue button-disabled" type="submit">
             Подписаться
           </button>
         </form>
@@ -220,23 +219,23 @@
             <fieldset class="number-of-guests modal-booking-form">
               <legend class="visually-hidden">Количество гостей</legend>
               <p class="guest-age">
-                <label for="adult-guests-input" class="lable-info">Взрослые:</label>
+                <label for="adult-guests-input" class="lable-info-guest lable-info-age">Взрослые:</label>
                 <button type="button" class="modal-minus-button modal-number-batton"><span class="visually-hidden">Уменьшить количество</span></button>
-                <input type="number" name="adult-guests" value="2" placeholder="1" min="0" id="adult-guests-input" class="guests-number-input">
+                <input type="number" name="adult-guests" value="2" placeholder="1" min="0" max="99" id="adult-guests-input" class="guests-number-input">
                 <button type="button" class="modal-plus-button modal-number-batton"><span class="visually-hidden">Увеличить количество</span></button>
               </p>
 
               <p class="guest-age guest-age-children ">
-                <span class="info-children-tooltip ">
-                  <label for="children-input" class="lable-info-children">Дети:</label>
+                <label class="info-children-tooltip ">
+                  <label for="children-input" class="lable-info-guest">Дети:</label>
                   <span class="tooltip">
                     <button class="tooltip-button" type="button" aria-labelledby="tooltip-label-date"></button>
                     <span class="tooltip-text" roll="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
-              </span>
+                </label>
 
                 <button type="button" class="modal-minus-button modal-number-batton"><span class="visually-hidden">Уменьшить количество</span></button>
-                <input type="number" name="children" value="2" placeholder="0" min="0" id="children-input" class="guests-number-input">
+                <input type="number" name="children" value="2" placeholder="0" min="0" max="99" id="children-input" class="guests-number-input">
                 <button type="button" class="modal-plus-button modal-number-batton"><span class="visually-hidden">Увеличить количество</span></button>
               </p>
             </fieldset>
