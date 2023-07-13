@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="page-conteiner">
-     <header class="main-header" data-test="header">
+     <header class="main-header">
        <a class="logo" href="index.html">
          <img src="image/logo_sedona.svg" alt="Лого Sedona" width="140" height="70">
        </a>
@@ -45,13 +45,13 @@
       </nav>
     </header>
 
-    <main data-test="main">
-      <section class="hero" data-test="hero">
+    <main>
+      <section class="hero">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <img class="hero-welcom" src="image/welcome_sedona.svg" alt="Вид на горы Седоны" width="458" height="352">
       </section>
 
-      <section class="about" data-test="advantages">
+      <section class="about">
         <div class="conteiner-about-title">
           <h2 class="about-title main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="about-intro main-intro">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -86,7 +86,7 @@
         </ul>
       </section>
 
-      <section class="services" data-test="service">
+      <section class="services">
         <div class="conteiner-services-title">
           <h2 class="service-title main-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
           <p class="services-intro main-intro">Опытный персонал и качественное обслуживание!</p>
@@ -113,13 +113,13 @@
         </ul>
       </section>
 
-      <section class="booking" data-test="search">
+      <section class="booking">
         <h2 class="booking-title main-title">Заинтересовались?</h2>
         <p class="booking-intro main-intro">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения&nbsp;гостиниц в Седоне</p>
         <a class="booking-link-button button button-brown button-disabled" href="#">Поиск гостиницы в Седоне</a>
       </section>
 
-      <section class="subscription" data-test="subscribe">
+      <section class="subscription">
         <div class="conteiner-subscription-title">
           <h2 class="subscription-content subscription-title main-title">Подпишитесь на рассылку</h2>
           <p class="subscription-content main-intro">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -132,7 +132,7 @@
       </section>
     </main>
 
-    <footer class="main-footer" data-test="footer">
+    <footer class="main-footer">
       <ul class="social-list">
         <li class="social-item item-marker">
           <a class="social-icon" href="https://vk.com/htmlacademy">
@@ -167,8 +167,8 @@
       </a>
     </footer>
 
-    <div class="modal-conteiner modal-conteiner-close">
-      <div class="modal-window">
+    <div class="modal-conteiner">
+      <div class="modal-window" data-test="modal">
         <button class="modal-button" type="button">
           <span class="visually-hidden">Закрыть окно поиска гостиницы</span>
         </button>
