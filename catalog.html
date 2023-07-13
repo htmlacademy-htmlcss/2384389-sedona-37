@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="page-conteiner">
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <a class="logo logo-catalog" href="index.html"><img src="image/logo_sedona.svg" alt="Лого Sedona" width="140" height="70"></a>
         <nav class="header-navigation">
           <ul class="navigation-list navigation-site">
@@ -43,8 +43,8 @@
         </nav>
       </header>
 
-      <main class="inner">
-        <section class="filter">
+      <main class="inner" data-test="main">
+        <section class="filter" data-test="filter">
           <h1 class="filtr-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs-list">
             <li class="breadcrumbs-item item-marker">
@@ -134,7 +134,7 @@
           </form>
         </section>
 
-        <section class="catalog-hotel">
+        <section class="catalog-hotel" data-test="catalog">
           <h2 class="visually-hidden">Каталог гостиниц</h2>
           <div class="conteiner-hotel-select">
             <p class="catalog-card-search main-title">Найдено гостиниц:
@@ -260,7 +260,7 @@
           </ul>
         </section>
 
-        <section class="subscription subscription-catalog">
+        <section class="subscription subscription-catalog" data-test="subscribe">
           <div class="conteiner-subscription-title">
             <h2 class="subscription-title main-title">Подпишитесь на рассылку</h2>
             <p class="subscription-intro main-intro">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -273,7 +273,7 @@
         </section>
       </main>
 
-      <footer class="main-footer">
+      <footer class="main-footer" data-test="footer">
         <ul class="social-list">
           <li class="social-item item-marker">
             <a class="social-icon" href="https://vk.com/htmlacademy">
