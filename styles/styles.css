@@ -1641,8 +1641,8 @@ a[href^="tel:"]:active {
 .guests-number-input {
   width: 31px;
   min-height: 48px;
-  border: none;
   background-color: #f2f2f2;
+  border: none;
   text-align: center;
   font-family: inherit;
   font-size: 18px;
