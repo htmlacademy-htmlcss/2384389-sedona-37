@@ -35,7 +35,7 @@ body {
   min-width: 1280px;
 }
 
-.page-conteiner {
+.page-container {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -52,6 +52,8 @@ body {
   min-height: 64px;
   margin: 0 auto;
   position: relative;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .logo {
@@ -168,7 +170,7 @@ body {
   margin: 5px 0;
 }
 
-.conteiner-batton-heder {
+.container-button-heder {
   width: 160px;
   flex-wrap: wrap;
 }
@@ -209,7 +211,7 @@ body {
 
 .button-brown:active {
   background-color: #756157;
-  color: #ffffff4d;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-blue {
@@ -226,17 +228,11 @@ body {
 
 .button-blue:active {
   background-color: #82b3d3;
-  color: #ffffff4d;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-disabled:disabled {
   background-color: #e5e5e5;
-}
-
-.main-header {
-  color: #000000;
-  background-color: #ffffff;
-  position: relative;
 }
 
 .navigation-link {
@@ -346,7 +342,7 @@ body {
   max-width: 100%;
 }
 
-.conteiner-about-title {
+.container-about-title {
   max-width: 680px;
   min-height: 282px;
   margin: 0 auto;
@@ -483,8 +479,8 @@ body {
   width: 400px;
   min-height: 385px;
   background-color: rgba(131, 179, 211, 0.2);
-  padding-left: 85px;
-  padding-right: 85px;
+  padding-left: 80px;
+  padding-right: 80px;
   padding-top: 113px;
   padding-bottom: 112px;
 }
@@ -497,14 +493,14 @@ body {
 .about-item-black {
   width: 400px;
   min-height: 385px;
-  padding-left: 85px;
-  padding-right: 85px;
+  padding-left: 80px;
+  padding-right: 80px;
   padding-top: 113px;
   padding-bottom: 112px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.conteiner-about-subtitle {
+.container-about-subtitle {
   padding-left: 80px;
   padding-right: 80px;
   padding-top: 102px;
@@ -513,7 +509,7 @@ body {
   flex-shrink: 0;
 }
 
-.conteiner-services-title {
+.container-services-title {
   width: 518px;
   margin: 0 auto;
   min-height: 246px;
@@ -538,7 +534,7 @@ body {
   min-height: 385px;
 }
 
-.conteiner-item-services {
+.container-item-services {
   width: 230px;
   min-height: 121px;
   margin: 0 auto;
@@ -610,7 +606,7 @@ body {
   padding-bottom: 90px;
 }
 
-.conteiner-subscription-title {
+.container-subscription-title {
   width: 475px;
   min-height: 158px;
   margin: 0 auto;
@@ -691,7 +687,7 @@ a[href^="tel:"]:focus {
 }
 
 a[href^="tel:"]:active {
-  color: #7561574d;
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .footer-logo-html {
@@ -712,7 +708,7 @@ a[href^="tel:"]:active {
 
 /*catalog*/
 
-.button-catalog-filtr {
+.button-catalog-filter {
   font-size: 16px;
   line-height: 20px;
   width: 191px;
@@ -736,15 +732,15 @@ a[href^="tel:"]:active {
 }
 
 .button-reset:hover {
-  opacity: 0.6000000238418579;
+  opacity: 0.6;
 }
 
 .button-reset:active {
-  color: #ffffff4d;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-reset:disabled {
-  opacity: 0.10000000149011612;
+  opacity: 0.1;
 }
 
 .card-button {
@@ -776,7 +772,7 @@ a[href^="tel:"]:active {
 
 .button-selection-green:active {
   background-color: #7db54f;
-  color: #ffffff4d;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-hotel-rating {
@@ -793,6 +789,7 @@ a[href^="tel:"]:active {
   background-color: #f2f2f2;
   border-radius: 4px;
   border: none;
+  min-height: 36px;
 }
 
 .pagination-list {
@@ -851,7 +848,7 @@ a[href^="tel:"]:active {
   padding-bottom: 50px;
 }
 
-.filtr-title {
+.filter-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
@@ -882,11 +879,11 @@ a[href^="tel:"]:active {
 }
 
 .breadcrumbs-link:hover {
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .breadcrumbs-link:active {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
@@ -952,21 +949,21 @@ a[href^="tel:"]:active {
 }
 
 .control:hover {
-  opacity: 0.6000000238418579;
+  opacity: 0.6;
 }
 
 .control:active {
-  opacity: 0.30000001192092896;
+  opacity: 0.3;
 }
 
-.filtr-catalog {
+.filter-catalog {
   display: flex;
   flex-direction: row;
   width: 1060px;
   margin: 0 auto;
 }
 
-.filtr-catalog-group {
+.filter-catalog-group {
   border: none;
   text-align: left;
   margin: 0;
@@ -975,7 +972,7 @@ a[href^="tel:"]:active {
   padding-right: 15px;
 }
 
-.filtr-catalog-group-title {
+.filter-catalog-group-title {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -984,26 +981,26 @@ a[href^="tel:"]:active {
   text-transform: capitalize;
 }
 
-.filtr-catalog-list {
+.filter-catalog-list {
   font-size: 18px;
   line-height: 23px;
   padding: 0;
   margin: 0;
 }
 
-.filtr-catalog-item {
+.filter-catalog-item {
   margin-bottom: 16px;
 }
 
-.filtr-catalog-group-house {
+.filter-catalog-group-house {
   margin-right: 72px;
 }
 
-.conteiner-price-button {
+.container-price-button {
   width: 191px;
 }
 
-.filtr-price {
+.filter-price {
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
@@ -1011,25 +1008,25 @@ a[href^="tel:"]:active {
   position: relative;
 }
 
-.conteiner-price {
+.container-price {
   display: flex;
   margin-bottom: 5px;
 }
 
-.filtr-catalog-group-price {
+.filter-catalog-group-price {
   width: 288px;
   padding: 0;
   margin-right: 70px;
 }
 
-.filtr-price-min {
+.filter-price-min {
   position: absolute;
   top: 12px;
   right: 20px;
   color: #aaaaaa;
 }
 
-.filtr-price-max {
+.filter-price-max {
   position: absolute;
   top: 12px;
   right: 20px;
@@ -1083,7 +1080,7 @@ a[href^="tel:"]:active {
 .range-scale {
   height: 4px;
   width: 287px;
-  background-color: #ffffff3d;
+  background-color: rgba(255, 255, 255, 0.3);
   margin-top: 44px;
   position: relative;
 }
@@ -1127,7 +1124,7 @@ a[href^="tel:"]:active {
   right: -1px;
 }
 
-.conteiner-hotel-select {
+.container-hotel-select {
   display: flex;
   width: 1060px;
   margin-bottom: 40px;
@@ -1176,20 +1173,20 @@ a[href^="tel:"]:active {
 }
 
 .catalog-select-control:disabled {
-  border-color: #0000004d;
+  border-color: rgba(0, 0, 0, 0.3);
   color: rgba(0, 0, 0, 0.3);
 }
 
-.catalog-select-control:disabled + .select-conteiner::after {
+.catalog-select-control:disabled + .select-container::after {
   opacity: 0.3;
 }
 
-.select-conteiner {
+.select-container {
   position: relative;
   width: 292px;
 }
 
-.select-conteiner::after {
+.select-container::after {
   background-image: url("../image/decor_images/arrow_down.svg");
   background-repeat: no-repeat;
   width: 12px;
@@ -1271,7 +1268,7 @@ a[href^="tel:"]:active {
   gap: 20px;
 }
 
-.conteiner-card-list::after {
+.container-card-list::after {
   margin-top: 40px;
   margin-bottom: 40px;
   width: 100%;
@@ -1284,22 +1281,23 @@ a[href^="tel:"]:active {
 .catalog-card-item {
   display: grid;
   grid-template-columns: 140px 140px;
+  grid-template-rows: 1fr;
   column-gap: 20px;
   padding: 20px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
 }
 
-.card-foto {
+.card-photo {
   object-fit: contain;
   max-width: 100%;
 }
 
-.card-foto:hover {
+.card-photo:hover {
   opacity: 0.85;
 }
 
-.card-foto:active {
+.card-photo:active {
   opacity: 0.7;
 }
 
@@ -1379,7 +1377,7 @@ a[href^="tel:"]:active {
 
 /**modal**/
 
-.modal-conteiner {
+.modal-container {
   display: flex;
   position: fixed;
   top: 0;
@@ -1462,6 +1460,8 @@ a[href^="tel:"]:active {
 
 .modal-booking-form {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .modal-search-button {
@@ -1475,11 +1475,6 @@ a[href^="tel:"]:active {
   padding-top: 18px;
   padding-bottom: 18px;
   margin-top: 10px;
-}
-
-.modal-booking-form {
-  margin: 0;
-  padding: 0;
 }
 
 .date-input {
@@ -1540,7 +1535,7 @@ a[href^="tel:"]:active {
   align-items: center;
 }
 
-.lable-info-date {
+.label-info-date {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -1550,14 +1545,14 @@ a[href^="tel:"]:active {
   align-self: center;
 }
 
-.lable-info-guest {
+.label-info-guest {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
 }
 
-.lable-info-age {
+.label-info-age {
   width: 137px;
   padding-right: 10px;
 }
@@ -1656,19 +1651,19 @@ a[href^="tel:"]:active {
   color: #000000;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.guests-number-input::-webkit-outer-spin-button,
+.guests-number-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
           appearance: none;
   margin: 0;
 }
 
-input[type="number"] {
+.guests-number-input {
   -webkit-appearance: textfield;
           appearance: textfield;
 }
 
-.modal-number-batton {
+.modal-number-button {
   min-width: 40px;
   height: 48px;
   border: none;
@@ -1723,6 +1718,6 @@ input[type="number"] {
   background-color: #cccccc;
 }
 
-.modal-conteiner-close {
+.modal-container-close {
   display: none;
 }
